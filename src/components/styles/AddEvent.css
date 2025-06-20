@@ -1,0 +1,91 @@
+/* AddEvent.css */
+
+/* Container Styling */
+.add-event-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Form Title */
+.add-event-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.add-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input Fields */
+.add-event-form input,
+.add-event-form textarea {
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.add-event-form input:focus,
+.add-event-form textarea:focus {
+    border-color: #4A90E2;
+}
+
+/* Textarea Styling */
+.add-event-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+.add-event-form button {
+    padding: 12px 16px;
+    background-color: #4A90E2;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-event-form button:hover {
+    background-color: #357ABD;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-event-container {
+        padding: 20px;
+    }
+
+    .add-event-form input,
+    .add-event-form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Success and Error Alerts */
+.alert {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.alert.success {
+    color: #2E7D32;
+}
+
+.alert.error {
+    color: #D32F2F;
+}

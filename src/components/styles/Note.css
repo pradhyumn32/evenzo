@@ -1,0 +1,85 @@
+/* Event Card Container */
+.event-notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.note {
+    color: #ffffff;
+    background: linear-gradient(135deg, #667eea, #a890bf);
+    width: 320px;
+    min-height: 400px;
+    max-height: 400px;
+    /* background: #ffffff; */
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+}
+
+/* Hover Effect */
+.note:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Event Image */
+.note img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures image scales properly */
+    border-bottom: 1px solid #eee;
+}
+
+/* Event Title */
+.note h1 {
+    font-size: 1.5rem;
+    margin: 16px 16px 8px;
+    color: #ffffff;
+    white-space: nowrap; /* Keeps title in one line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Shows '...' if title is too long */
+}
+
+/* Event Description */
+.note p {
+    font-size: 1rem;
+    margin: 0 16px 16px;
+    color: #dcf0b3;
+    line-height: 1.6;
+    max-height: 80px; /* Restricts long descriptions */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Details Button */
+.note button {
+    display: block;
+    width: calc(100% - 32px);
+    margin: 0 16px 16px;
+    padding: 10px 0;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    /* position: relative; */
+    /* bottom: 0px;   */
+}
+
+.note button:hover {
+    background: #357ab8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .note {
+        width: 100%;
+    }
+}
